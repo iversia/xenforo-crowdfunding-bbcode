@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon addon_id="crowdfunding_bbcode" title="Crowdfunding BB Code Media Pack" version_string="1.0.0" version_id="1" url="https://github.com/iversia/XenForo-Crowdfunding-BBCode" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+  <admin_navigation/>
+  <admin_permissions/>
+  <admin_style_properties/>
+  <admin_templates/>
+  <code_events/>
+  <code_event_listeners/>
+  <cron/>
+  <email_templates/>
+  <optiongroups/>
+  <permissions>
+    <permission_groups/>
+    <permissions/>
+    <interface_groups/>
+  </permissions>
+  <phrases/>
+  <route_prefixes/>
+  <style_properties/>
+  <templates/>
+  <bb_code_media_sites>
+    <site media_site_id="crowdfunderuk" site_title="Crowdfunder.co.uk" site_url="http://www.crowdfunder.co.uk/" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
+      <match_urls><![CDATA[http://www.crowdfunder.co.uk/investment/{$id}]]></match_urls>
+      <embed_html><![CDATA[<iframe src="http://www.crowdfunder.co.uk/investment-widget/{$id}" width="200" height="500" frameborder="0"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="indiegogo" site_title="Indiegogo" site_url="http://www.indiegogo.com" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="1">
+      <match_urls><![CDATA[indiegogo.com/projects/{$id}
+indiegogo.com/project/share/{$id}]]></match_urls>
+      <embed_html><![CDATA[<iframe src="http://www.indiegogo.com/project/{$id}/widget" width="224px" height="486px" frameborder="0" scrolling="no"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="kickstarter" site_title="Kickstarter" site_url="http://www.kickstarter.com" match_is_regex="1" match_callback_class="" match_callback_method="" embed_html_callback_class="Iversia_Crowdfunding_BbCode_Media" embed_html_callback_method="kickstarter" supported="1">
+      <match_urls><![CDATA[#kickstarter\.com/projects/(?P<id>[a-z0-9+\/_/-]+)#i]]></match_urls>
+      <embed_html><![CDATA[<iframe frameborder="0" height="380" src="http://www.kickstarter.com/projects/KICK_ID/widget/card.html" width="220"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="kisskissbankbank" site_title="KissKissBankBank" site_url="http://www.kisskissbankbank.com/" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
+      <match_urls><![CDATA[kisskissbankbank.com/{$id}]]></match_urls>
+      <embed_html><![CDATA[<iframe frameborder="0" width="232" height="330" src="http://www.kisskissbankbank.com/en/projects/{$id}/widget"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="medstartr" site_title="Medstartr" site_url="http://www.medstartr.com" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
+      <match_urls><![CDATA[medstartr.com/projects/{$id}]]></match_urls>
+      <embed_html><![CDATA[<iframe frameborder="0" height="388px" src="http://www.medstartr.com/projects/{$id}/embed" width="264px" style="-moz-border-radius: 8px;-webkit-border-radius: 8px;-o-border-radius: 8px;-ms-border-radius: 8px;-khtml-border-radius: 8px;border-radius: 8px;-moz-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0;-webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0;-o-box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0;box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 10px 0;"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="rockethub" site_title="RocketHub" site_url="http://www.rockethub.com/" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
+      <match_urls><![CDATA[rockethub.com/projects/{$id}
+rkthb.co/{$id}]]></match_urls>
+      <embed_html><![CDATA[<iframe src="http://www.rockethub.com/projects/{$id}/widgets/panel" allowtransparency="true" frameborder="0" scrolling="no" width="288" height="416"></iframe>]]></embed_html>
+    </site>
+    <site media_site_id="ulule" site_title="Ulule" site_url="http://www.ulule.com/" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
+      <match_urls><![CDATA[ulule.com/{$id}/
+ulule.com/{$id}/promote/]]></match_urls>
+      <embed_html><![CDATA[<object width="300" height="250"><param name="movie" value="http://static.ulule.me/site/img/widget.swf"></param><param name="flashvars" value="src=http://www.ulule.com/{$id}/widget.xml"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://static.ulule.me/site/img/widget.swf" flashvars="src=http://www.ulule.com/k-log/widget.xml" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" width="300" height="250"></embed></object>]]></embed_html>
+    </site>
+  </bb_code_media_sites>
+  <user_fields/>
+  <thread_fields/>
+  <template_modifications/>
+  <brc_actions/>
+</addon>
