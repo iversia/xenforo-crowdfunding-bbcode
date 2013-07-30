@@ -1,4 +1,4 @@
-XenForo-Crowdfunding-BBCode
+XenForo Crowdfunding BBCode
 ===========================
 
 Crowdfunding BB Code Media Pack for XenForo
@@ -15,7 +15,7 @@ Supported Sites
 
 Requirements
 ------------
-* [XenForo](http://xenforo.com/) 1.2 RC2
+* [XenForo](http://xenforo.com/) 1.2.0
 
 Copyright / License
 ------------
