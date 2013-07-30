@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<addon addon_id="crowdfunding_bbcode" title="Crowdfunding BB Code Media Pack" version_string="1.0.0" version_id="1" url="https://github.com/iversia/XenForo-Crowdfunding-BBCode" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
+<addon addon_id="crowdfunding_bbcode" title="Crowdfunding BB Code Media Pack" version_string="2.0.0" version_id="2" url="https://github.com/iversia/XenForo-Crowdfunding-BBCode" install_callback_class="" install_callback_method="" uninstall_callback_class="" uninstall_callback_method="">
   <admin_navigation/>
   <admin_permissions/>
   <admin_style_properties/>
   <admin_templates/>
+  <admin_template_modifications/>
   <code_events/>
   <code_event_listeners/>
   <cron/>
   <email_templates/>
+  <email_template_modifications/>
   <optiongroups/>
   <permissions>
     <permission_groups/>
@@ -18,6 +20,7 @@
   <route_prefixes/>
   <style_properties/>
   <templates/>
+  <public_template_modifications/>
   <bb_code_media_sites>
     <site media_site_id="crowdfunderuk" site_title="Crowdfunder.co.uk" site_url="http://www.crowdfunder.co.uk/" match_is_regex="0" match_callback_class="" match_callback_method="" embed_html_callback_class="" embed_html_callback_method="" supported="0">
       <match_urls><![CDATA[http://www.crowdfunder.co.uk/investment/{$id}]]></match_urls>
@@ -51,8 +54,4 @@ ulule.com/{$id}/promote/]]></match_urls>
       <embed_html><![CDATA[<object width="300" height="250"><param name="movie" value="http://static.ulule.me/site/img/widget.swf"></param><param name="flashvars" value="src=http://www.ulule.com/{$id}/widget.xml"></param><param name="wmode" value="transparent"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://static.ulule.me/site/img/widget.swf" flashvars="src=http://www.ulule.com/k-log/widget.xml" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" width="300" height="250"></embed></object>]]></embed_html>
     </site>
   </bb_code_media_sites>
-  <user_fields/>
-  <thread_fields/>
-  <template_modifications/>
-  <brc_actions/>
 </addon>

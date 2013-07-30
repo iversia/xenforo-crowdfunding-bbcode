@@ -15,7 +15,7 @@ Supported Sites
 
 Requirements
 ------------
-* [XenForo](http://xenforo.com/) 1.1.3+
+* [XenForo](http://xenforo.com/) 1.2 RC2
 
 Copyright / License
 ------------
